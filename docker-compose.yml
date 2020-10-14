@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  videohub:
+    image: videohub 
+    build:
+      context: .
+    ports:
+      - "8080:80"
+      - "1935:1935"
+  
